@@ -11,10 +11,10 @@ const slides = [
     {
         id: 1,
         image: slide4,
-        label: "",
+        label: "Our Mission",
         headline: "The future belongs to people who understand their health early.",
         subtext: "We're making that future accessible.",
-        hasLabel: false,
+        hasLabel: true,
     },
     {
         id: 2,
@@ -35,10 +35,10 @@ const slides = [
     {
         id: 4,
         image: slide1,
-        label: "Our Mission",
+        label: "",
         headline: "We're building intelligence that listens with you.",
         subtext: "",
-        hasLabel: true,
+        hasLabel: false,
     },
 ];
 
@@ -88,14 +88,14 @@ export function MissionSlider() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="popLayout">
                 <motion.div
                     key={currentSlide}
                     className="absolute inset-0 cursor-grab active:cursor-grabbing"
                     initial={{ x: "100%", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: "-100%", opacity: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.7, ease: "easeInOut" }}
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}
                     dragElastic={0.2}
@@ -123,7 +123,7 @@ export function MissionSlider() {
                                         className="inline-block text-teal-400 text-sm font-semibold tracking-widest uppercase mb-6"
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.2, duration: 0.6 }}
+                                        transition={{ delay: 0.1, duration: 0.4 }}
                                     >
                                         {slides[currentSlide].label}
                                     </motion.span>
@@ -134,7 +134,7 @@ export function MissionSlider() {
                                     className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 tracking-tight leading-[1.1]"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.3, duration: 0.6 }}
+                                    transition={{ delay: 0.15, duration: 0.4 }}
                                 >
                                     {slides[currentSlide].headline}
                                 </motion.h2>
@@ -145,7 +145,7 @@ export function MissionSlider() {
                                         className="text-xl md:text-2xl text-white/80 font-light mb-10 max-w-2xl"
                                         initial={{ opacity: 0, y: 15 }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{ delay: 0.2, duration: 0.4 }}
                                     >
                                         {slides[currentSlide].subtext}
                                     </motion.p>
@@ -157,7 +157,7 @@ export function MissionSlider() {
                                     className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-teal-50 text-slate-900 font-semibold rounded-full shadow-lg transition-all duration-300 text-base pointer-events-auto"
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.5, duration: 0.6 }}
+                                    transition={{ delay: 0.25, duration: 0.4 }}
                                 >
                                     Learn more
                                     <ArrowRight className="w-5 h-5" />
