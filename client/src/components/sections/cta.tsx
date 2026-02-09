@@ -81,7 +81,7 @@ export function CTASection() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="h-14 px-6 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-hidden focus:ring-2 focus:ring-white/40 w-full sm:w-80"
+                className="h-14 px-6 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder:text-white/60 focus:outline-hidden focus:ring-2 focus:ring-white/50 focus:bg-white/25 w-full sm:w-80"
               />
               <motion.div
                 style={{
