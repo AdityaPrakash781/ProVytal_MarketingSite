@@ -168,36 +168,36 @@ export function MissionSlider() {
                 </motion.div>
             </AnimatePresence>
 
-            {/* Navigation Arrows */}
+            {/* Navigation Arrows - Always Visible */}
             <button
                 onClick={prevSlide}
-                className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center opacity-0 hover:opacity-100 hover:bg-white/20 transition-all duration-300"
+                className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center opacity-60 hover:opacity-100 hover:bg-white/30 transition-all duration-300 hover:scale-110"
                 aria-label="Previous slide"
             >
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
 
             <button
                 onClick={nextSlide}
-                className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center opacity-0 hover:opacity-100 hover:bg-white/20 transition-all duration-300"
+                className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center opacity-60 hover:opacity-100 hover:bg-white/30 transition-all duration-300 hover:scale-110"
                 aria-label="Next slide"
             >
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
             </button>
 
-            {/* Dot Indicators */}
+            {/* Dot Indicators - Larger and More Visible */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
                 {slides.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => goToSlide(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide
-                                ? 'bg-white w-8'
-                                : 'bg-white/40 hover:bg-white/60'
+                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === currentSlide
+                                ? 'bg-white w-10'
+                                : 'bg-white/50 hover:bg-white/70'
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />
