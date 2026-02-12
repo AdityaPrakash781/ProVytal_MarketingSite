@@ -49,7 +49,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
             </span>
-            VytalCare AI 2.0 is live
+            ProVytal AI 2.0 is live
           </motion.div>
 
           <motion.h1
@@ -70,7 +70,7 @@ export function Hero() {
               visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
             }}
           >
-            Healthcare should act before damage is done. VytalCare uses agentic AI to monitor your vitals, detect early risk patterns, and guide you to optimal health.
+            Healthcare should act before damage is done. ProVytal uses agentic AI to monitor your vitals, detect early risk patterns, and guide you to optimal health.
           </motion.p>
 
           <motion.div

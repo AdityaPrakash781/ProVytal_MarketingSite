@@ -15,7 +15,7 @@ export function TrustSection() {
               Privacy first.<br/>No compromises.
             </h2>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-              Your health data is the most sensitive information you own. We treat it with the same rigor as a Swiss bank. VytalCare is designed to assist, not diagnose, ensuring you remain in control.
+              Your health data is the most sensitive information you own. We treat it with the same rigor as a Swiss bank. ProVytal is designed to assist, not diagnose, ensuring you remain in control.
             </p>
             
             <div className="space-y-6">

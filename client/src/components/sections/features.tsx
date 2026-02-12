@@ -57,7 +57,7 @@ export function FeaturesSection() {
             A thinking system for your body.
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400">
-            VytalCare moves beyond simple tracking to provide intelligent, contextual health awareness.
+            ProVytal moves beyond simple tracking to provide intelligent, contextual health awareness.
           </p>
         </div>
 

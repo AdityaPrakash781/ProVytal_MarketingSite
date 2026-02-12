@@ -23,15 +23,15 @@ export default function Home() {
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-slate-900 dark:bg-white rounded-md flex items-center justify-center text-white dark:text-slate-900 font-bold text-xs">V</div>
-            <span className="font-heading font-bold text-lg">VytalCare</span>
+            <span className="font-heading font-bold text-lg">ProVytal</span>
           </div>
           <div className="text-sm text-slate-500">
-            © 2026 VytalCare Health Inc. All rights reserved.
+            © 2026 ProVytal Health Inc. All rights reserved.
           </div>
           <div className="flex gap-6 text-sm text-slate-500">
             <a href="#privacy" className="hover:text-slate-900 dark:hover:text-white">Privacy</a>
             <a href="#terms" className="hover:text-slate-900 dark:hover:text-white">Terms</a>
-            <a href="https://twitter.com/vytalcare" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-white">Twitter</a>
+            <a href="https://twitter.com/ProVytal" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-white">Twitter</a>
           </div>
         </div>
       </footer>

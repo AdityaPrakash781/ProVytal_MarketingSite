@@ -10,7 +10,7 @@ export function ProblemSection() {
             <span className="text-slate-800 dark:text-slate-100 font-extrabold">it's already late.</span>
           </h2>
           <p className="text-xl text-slate-600/90 dark:text-slate-400/90 mb-5 leading-relaxed font-medium">
-            Most apps show yesterday's data. VytalCare shows tomorrow's risks — so you can stay ahead today.
+            Most apps show yesterday's data. ProVytal shows tomorrow's risks — so you can stay ahead today.
           </p>
           <p className="text-xs text-slate-500/70 dark:text-slate-400/70 tracking-widest uppercase">
             Most chronic conditions grow silently long before symptoms appear.

@@ -34,12 +34,17 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/">
           <span className="flex items-center gap-2 group cursor-pointer">
-            <div className="relative w-8 h-8 flex items-center justify-center bg-primary rounded-lg text-white overflow-hidden group-hover:scale-105 transition-transform duration-300">
-              <span className="font-heading font-bold text-xl relative z-10">V</span>
-              <div className="absolute inset-0 bg-teal-400 opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
-            </div>
+<div className="w-12 h-12 rounded-md overflow-hidden group-hover:scale-105 transition-transform duration-300">
+  <img
+    src="/favicon.png"
+    alt="ProVytal logo"
+    className="w-full h-full object-cover"
+  />
+</div>
+
+
             <span className="font-heading font-bold text-xl tracking-tight text-slate-900 dark:text-white">
-              VytalCare
+              ProVytal
             </span>
           </span>
         </Link>
