@@ -39,7 +39,15 @@ export function Hero() {
           }}
         >
           <motion.div
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 border border-teal-100 dark:border-teal-800 mb-6 text-sm font-medium"
+       className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+bg-teal-500/15 dark:bg-teal-400/10
+backdrop-blur-xl
+border border-teal-400/30 dark:border-teal-300/20
+shadow-lg shadow-teal-900/20
+text-teal-700 dark:text-teal-300
+mb-6 text-sm font-medium"
+
+
             variants={{
               hidden: { opacity: 0, y: 10 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
