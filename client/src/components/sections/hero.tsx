@@ -80,11 +80,11 @@ export function Hero() {
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
             }}
           >
-            <Button size="lg" className="bg-primary hover:bg-teal-700 text-white rounded-full h-14 px-8 text-lg shadow-xl shadow-teal-900/20 group">
+            <Button size="lg" className="bg-primary hover:bg-teal-700 text-white rounded-full h-14 px-8 text-lg shadow-xl shadow-teal-900/20 group" onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}>
               Start Preventing
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full h-14 px-8 text-lg border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">
+            <Button size="lg" variant="outline" className="rounded-full h-14 px-8 text-lg border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}>
               See How It Works
             </Button>
           </motion.div>

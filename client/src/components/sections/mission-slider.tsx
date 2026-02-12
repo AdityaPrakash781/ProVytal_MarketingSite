@@ -153,7 +153,7 @@ export function MissionSlider() {
 
                                 {/* Button */}
                                 <motion.a
-                                    href="#"
+                                    href="#cta"
                                     className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-teal-50 text-slate-900 font-semibold rounded-full shadow-lg transition-all duration-300 text-base pointer-events-auto"
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -195,8 +195,8 @@ export function MissionSlider() {
                         key={index}
                         onClick={() => goToSlide(index)}
                         className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === currentSlide
-                                ? 'bg-white w-10'
-                                : 'bg-white/50 hover:bg-white/70'
+                            ? 'bg-white w-10'
+                            : 'bg-white/50 hover:bg-white/70'
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />

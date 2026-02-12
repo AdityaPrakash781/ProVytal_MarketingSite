@@ -83,10 +83,10 @@ export function CTASection() {
             />
 
             {/* Dark Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/35 to-black/20" />
 
             {/* Vignette Effect */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.2)_100%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.10)_100%)]" />
           </div>
 
           <div className="relative z-10 max-w-3xl mx-auto">

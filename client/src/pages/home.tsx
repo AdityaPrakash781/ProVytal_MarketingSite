@@ -29,9 +29,9 @@ export default function Home() {
             © 2026 VytalCare Health Inc. All rights reserved.
           </div>
           <div className="flex gap-6 text-sm text-slate-500">
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white">Terms</a>
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white">Twitter</a>
+            <a href="#privacy" className="hover:text-slate-900 dark:hover:text-white">Privacy</a>
+            <a href="#terms" className="hover:text-slate-900 dark:hover:text-white">Terms</a>
+            <a href="https://twitter.com/vytalcare" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-white">Twitter</a>
           </div>
         </div>
       </footer>
