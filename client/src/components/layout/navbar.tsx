@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,6 +64,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
+          <ModeToggle />
           <Button
             variant="ghost"
             className="text-slate-600 dark:text-slate-300 hover:text-primary"
@@ -80,12 +82,15 @@ export function Navbar() {
 
 
         {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-slate-700 dark:text-slate-200"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ModeToggle />
+          <button
+            className="text-slate-700 dark:text-slate-200"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}

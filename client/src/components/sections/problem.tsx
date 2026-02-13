@@ -39,16 +39,16 @@ export function ProblemSection() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-28 relative">
             {/* Old Way */}
             <motion.div
-              className="bg-slate-100/60 dark:bg-slate-900/60 backdrop-blur-sm p-12 rounded-[2rem] shadow-md shadow-slate-400/30 dark:shadow-slate-950/60 border border-slate-400/40 dark:border-slate-800/40 relative z-10 hover:shadow-lg hover:shadow-slate-400/35 transition-all duration-500 saturate-[0.85]"
+              className="bg-slate-100/60 dark:bg-slate-800/80 backdrop-blur-sm p-12 rounded-[2rem] shadow-md shadow-slate-400/30 dark:shadow-black/40 border border-slate-400/40 dark:border-slate-700 relative z-10 hover:shadow-lg hover:shadow-slate-400/35 transition-all duration-500 saturate-[0.85]"
               initial={{ opacity: 0, x: -40, y: 20 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <div className="absolute -top-3.5 left-8 bg-gradient-to-br from-slate-300 to-slate-400 text-slate-700 text-[0.7rem] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-sm">Reactive Health</div>
-              <p className="text-[0.65rem] uppercase tracking-[0.15em] text-slate-500/60 mb-3 font-semibold">After symptoms appear</p>
-              <h3 className="text-2xl font-bold text-slate-700 dark:text-slate-300 mb-8 tracking-tight">Wait for Symptoms</h3>
-              <ul className="space-y-4 text-slate-600/90 dark:text-slate-400/90">
+              <div className="absolute -top-3.5 left-8 bg-gradient-to-br from-slate-300 to-slate-400 text-slate-700 dark:from-slate-800 dark:to-slate-700 dark:text-slate-200 text-[0.7rem] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-sm border border-transparent dark:border-slate-600">Reactive Health</div>
+              <p className="text-[0.65rem] uppercase tracking-[0.15em] text-slate-500/60 dark:text-slate-400 mb-3 font-semibold">After symptoms appear</p>
+              <h3 className="text-2xl font-bold text-slate-700 dark:text-slate-200 mb-8 tracking-tight">Wait for Symptoms</h3>
+              <ul className="space-y-4 text-slate-600/90 dark:text-slate-300">
                 <li className="flex items-start gap-3.5">
                   <span className="text-red-400 dark:text-red-500/80 text-lg mt-0.5 font-bold">✕</span>
                   <span className="leading-relaxed">Miss early warning signs your body sends</span>
