@@ -81,13 +81,13 @@ export function Navbar() {
           <ModeToggle />
           <Button
             variant="ghost"
-            className="text-slate-600 dark:text-slate-300 hover:text-primary"
+            className="text-slate-600 dark:text-slate-300 hover:text-primary cursor-pointer"
             onClick={() => window.open("https://health-navigator-copy.vercel.app/", "_blank")}
           >
             Log in
           </Button>
           <Button
-            className="bg-primary hover:bg-teal-600 text-white rounded-full px-6 shadow-lg shadow-teal-900/20 transition-all duration-300 hover:scale-105 hover:shadow-teal-500/25 dark:hover:shadow-teal-400/20 active:scale-95"
+            className="bg-primary hover:bg-teal-600 text-white rounded-full px-6 shadow-lg shadow-teal-900/20 transition-all duration-300 hover:scale-105 hover:shadow-teal-500/25 dark:hover:shadow-teal-400/20 active:scale-95 cursor-pointer"
             onClick={handleJoinWaitlist}
           >
             Join Waitlist
