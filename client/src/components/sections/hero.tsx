@@ -24,7 +24,7 @@ export function Hero() {
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <motion.div
-          className="max-w-2xl"
+          className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left"
           initial="hidden"
           animate="visible"
           variants={{
@@ -39,7 +39,7 @@ export function Hero() {
           }}
         >
           <motion.div
-       className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
 bg-teal-500/15 dark:bg-teal-400/10
 backdrop-blur-xl
 border border-teal-400/30 dark:border-teal-300/20
@@ -61,7 +61,7 @@ mb-6 text-sm font-medium"
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl font-heading font-bold leading-[1.1] tracking-tight text-slate-900 dark:text-white mb-6"
+            className="text-4xl md:text-7xl font-heading font-bold leading-[1.1] tracking-tight text-slate-900 dark:text-white mb-6"
             variants={{
               hidden: { opacity: 0, y: 12 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -72,7 +72,7 @@ mb-6 text-sm font-medium"
           </motion.h1>
 
           <motion.p
-            className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-lg"
+            className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0"
             variants={{
               hidden: { opacity: 0, y: 10 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -82,7 +82,7 @@ mb-6 text-sm font-medium"
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             variants={{
               hidden: { opacity: 0, y: 10 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -98,7 +98,7 @@ mb-6 text-sm font-medium"
           </motion.div>
 
           <motion.div
-            className="mt-12 flex items-center gap-6 text-sm text-slate-500 font-medium"
+            className="mt-12 flex flex-col sm:flex-row items-center gap-6 text-sm text-slate-500 font-medium justify-center lg:justify-start"
             variants={{
               hidden: { opacity: 0, y: 10 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },

@@ -123,7 +123,7 @@ export function CTASection() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="h-14 px-6 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder:text-white/60 focus:outline-hidden focus:ring-2 focus:ring-white/50 focus:bg-white/25 w-full sm:w-80"
+                className="h-14 px-6 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white placeholder:text-white/60 focus:outline-hidden focus:ring-2 focus:ring-teal-400/50 focus:bg-white/25 focus:shadow-[0_0_20px_rgba(20,184,166,0.3)] transition-all duration-300 w-full sm:w-80"
               />
               <motion.div
                 style={{
@@ -142,7 +142,7 @@ export function CTASection() {
                   type="submit"
                   disabled={mutation.isPending}
                   size="lg"
-                  className="bg-white text-slate-900 hover:bg-white/90 rounded-full h-14 px-8 font-bold text-lg relative z-10"
+                  className="bg-white text-slate-900 hover:bg-white/90 hover:scale-[1.02] active:scale-[0.98] rounded-full h-14 px-8 font-bold text-lg relative z-10 shadow-xl shadow-black/10 transition-all duration-300"
                 >
                   {mutation.isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
                   Join Early Access

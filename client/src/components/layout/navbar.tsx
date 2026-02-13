@@ -49,7 +49,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/">
           <span className="flex items-center gap-2 group cursor-pointer">
-            <div className="w-10 h-10 rounded-md overflow-hidden scale-105 transition-transform duration-300">
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-md overflow-hidden scale-105 transition-transform duration-300">
               <img
                 src="/favicon.png"
                 alt="ProVytal logo"
@@ -58,7 +58,7 @@ export function Navbar() {
             </div>
 
 
-            <span className="font-heading font-bold text-xl md:text-2xl tracking-tight text-slate-900 dark:text-white">
+            <span className="font-heading font-bold text-lg md:text-2xl tracking-tight text-slate-900 dark:text-white">
               ProVytal
             </span>
           </span>
@@ -87,7 +87,7 @@ export function Navbar() {
             Log in
           </Button>
           <Button
-            className="bg-primary hover:bg-teal-700 text-white rounded-full px-6 shadow-lg shadow-teal-900/20"
+            className="bg-primary hover:bg-teal-600 text-white rounded-full px-6 shadow-lg shadow-teal-900/20 transition-all duration-300 hover:scale-105 hover:shadow-teal-500/25 dark:hover:shadow-teal-400/20 active:scale-95"
             onClick={handleJoinWaitlist}
           >
             Join Waitlist
@@ -109,32 +109,34 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 p-6 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-5">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-lg font-medium text-slate-700 dark:text-slate-200"
-              onClick={() => setMobileMenuOpen(false)}
+        <div className="md:hidden absolute top-full left-0 right-0 h-screen bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 p-6 flex flex-col gap-6 shadow-2xl animate-in slide-in-from-top-5 z-40">
+          <div className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-xl font-medium text-slate-800 dark:text-slate-100 py-2 border-b border-slate-100 dark:border-slate-800/50"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+          <div className="flex flex-col gap-3 mt-4">
+            <Button
+              variant="outline"
+              className="w-full justify-center text-lg h-12"
+              onClick={() => window.open("https://health-navigator-copy.vercel.app/", "_blank")}
             >
-              {link.name}
-            </a>
-          ))}
-          <div className="h-px bg-slate-100 dark:bg-slate-800 my-2" />
-          <Button
-            variant="ghost"
-            className="justify-start"
-            onClick={() => window.open("https://your-actual-app.vercel.app", "_blank")}
-          >
-            Log in
-          </Button>
-          <Button
-            className="w-full bg-primary text-white rounded-full"
-            onClick={handleJoinWaitlist}
-          >
-            Join Waitlist
-          </Button>
-
+              Log in
+            </Button>
+            <Button
+              className="w-full bg-primary text-white rounded-full text-lg h-12 shadow-lg"
+              onClick={handleJoinWaitlist}
+            >
+              Join Waitlist
+            </Button>
+          </div>
         </div>
       )}
     </header>

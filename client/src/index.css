@@ -177,8 +177,23 @@
   }
 }
 
-/* Global 90% visual scale with no horizontal scroll */
+/* Global 90% visual scale with no horizontal scroll - Desktop Only */
+@media (min-width: 1024px) {
+  body {
+    zoom: 0.9;
+  }
+}
+
 body {
-  zoom: 0.9;
   overflow-x: hidden;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/60 dark:bg-slate-900/40 backdrop-blur-xl border border-white/50 dark:border-white/10;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
 }

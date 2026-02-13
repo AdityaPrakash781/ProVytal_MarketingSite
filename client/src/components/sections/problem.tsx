@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function ProblemSection() {
   return (
-    <section id="approach" className="pt-32 pb-4 bg-slate-50 dark:bg-slate-900/50">
+    <section id="approach" className="pt-32 pb-4 bg-slate-50 dark:bg-slate-900/50 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-24">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 dark:text-white mb-7 tracking-tighter leading-[1.15]">
@@ -39,7 +39,7 @@ export function ProblemSection() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-28 relative">
             {/* Old Way */}
             <motion.div
-              className="bg-slate-100/60 dark:bg-slate-800/80 backdrop-blur-sm p-12 rounded-[2rem] shadow-md shadow-slate-400/30 dark:shadow-black/40 border border-slate-400/40 dark:border-slate-700 relative z-10 hover:shadow-lg hover:shadow-slate-400/35 transition-all duration-500 saturate-[0.85]"
+              className="bg-slate-100/60 dark:bg-slate-800/80 backdrop-blur-sm p-8 md:p-12 rounded-[2rem] shadow-md shadow-slate-400/30 dark:shadow-black/40 border border-slate-400/40 dark:border-slate-700 relative z-10 hover:shadow-lg hover:shadow-slate-400/35 transition-all duration-500 saturate-[0.85]"
               initial={{ opacity: 0, x: -40, y: 20 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
@@ -66,7 +66,7 @@ export function ProblemSection() {
 
             {/* Vytal Way */}
             <motion.div
-              className="bg-gradient-to-br from-white via-teal-50/40 to-teal-50/60 dark:from-slate-900 dark:via-teal-950/30 dark:to-teal-950/40 backdrop-blur-sm p-12 rounded-[2rem] shadow-2xl shadow-teal-500/20 border-2 border-teal-400/40 dark:border-teal-500/40 relative z-20 group"
+              className="bg-gradient-to-br from-white via-teal-50/40 to-teal-50/60 dark:from-slate-900 dark:via-teal-950/30 dark:to-teal-950/40 backdrop-blur-sm p-8 md:p-12 rounded-[2rem] shadow-2xl shadow-teal-500/20 border-2 border-teal-400/40 dark:border-teal-500/40 relative z-20 group"
               initial={{ opacity: 0, x: 40, y: 20 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
