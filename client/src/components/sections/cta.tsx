@@ -64,7 +64,7 @@ export function CTASection() {
   };
 
   return (
-    <section id="cta" className="py-24 bg-white dark:bg-slate-950">
+    <section id="cta" className="py-24 bg-white dark:bg-[#081B2F]">
       <div className="container mx-auto px-6">
 
         <motion.div
@@ -143,8 +143,8 @@ export function CTASection() {
               </motion.div>
             </form>
 
-            <p className="mt-6 text-sm text-white/60">
-              Limited spots available for the beta program.
+            <p className="mt-4 text-xs text-white/40 tracking-wide font-medium">
+              No spam. Unsubscribe anytime.
             </p>
           </div>
         </motion.div>
