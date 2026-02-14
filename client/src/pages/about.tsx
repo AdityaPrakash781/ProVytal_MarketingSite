@@ -264,7 +264,7 @@ export default function About() {
                         <p className="text-lg text-slate-600 dark:text-slate-300 font-sans font-light mb-10 leading-relaxed max-w-xl mx-auto">
                             Be part of the generation that chooses to know, not guess. Your future self will thank you.
                         </p>
-                        <Button asChild size="lg" className="rounded-full h-14 px-10 text-lg bg-teal-600/40 backdrop-blur-md border border-teal-500/30 hover:bg-teal-600/60 text-white shadow-xl shadow-teal-500/10 hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-1">
+                        <Button asChild size="lg" className="rounded-full h-14 px-10 text-lg bg-teal-600 dark:bg-teal-600/40 backdrop-blur-md border border-teal-500/30 hover:bg-teal-700 dark:hover:bg-teal-600/60 text-white shadow-xl shadow-teal-500/10 hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-1">
                             <Link href="/#cta">
                                 Join the Waitlist
                                 <ArrowRight className="ml-2 w-5 h-5" />
