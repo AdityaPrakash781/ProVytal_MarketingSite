@@ -145,6 +145,7 @@
         @apply border-border transition-colors duration-300;
     }
 
+    html,
     body {
         @apply font-sans antialiased bg-background text-foreground selection:bg-primary/20;
     }
@@ -213,4 +214,36 @@ html.cb-tritanopia {
 
 html.cb-achromatopsia {
     filter: url('#achromatopsia') !important;
+}
+
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(148, 163, 184, 0.5);
+    /* slate-400/50 */
+    border-radius: 99px;
+    background-clip: content-box;
+    border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(148, 163, 184, 0.8);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(71, 85, 105, 0.6);
+    /* slate-600/60 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(148, 163, 184, 0.5);
+    /* slate-400/50 */
 }
