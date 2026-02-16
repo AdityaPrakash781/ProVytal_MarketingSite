@@ -57,7 +57,7 @@ mb-6 text-sm font-medium"
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
             </span>
-            ProVytal AI 2.0 is live
+            Coming Late 2026
           </motion.div>
 
           <motion.h1
